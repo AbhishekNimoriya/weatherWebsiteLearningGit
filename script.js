@@ -70,7 +70,12 @@ setTimeout(function(){
 
 
 
-
+search:function () {
+    this.fetchWeather(document.querySelector(".searchBar").value);
+    if(document.querySelector(".searchBar").value == ""){
+        alert("Please enter the city name !");
+    }
+}
 
 
 // link:https://api.openweathermap.org/data/2.5/weather?q=Bareilly&units=metric&appid=5abc8d09ff5581b7e1cf8c07b0bab03c
